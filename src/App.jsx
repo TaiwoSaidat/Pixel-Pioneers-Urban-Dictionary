@@ -16,6 +16,7 @@ function CreateCard(product) {
 function App() {
   return (
     <div>
+      <Header />
       <div className="input" >
         <div>
           <input type="text" placeholder="Search"/>
@@ -23,7 +24,7 @@ function App() {
         </div>
         <input type="text" placeholder="Add New Words"/>
       </div>
-      <Header />
+      
       <div className="section">
         {pdt.map(CreateCard)}
       </div>
